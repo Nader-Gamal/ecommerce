@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Shop Commerce Project</title>
+
+  <!-- ! GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- ! FONT AWESOME 6.1.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- ! CUSTOM STYLE -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ! SECTION NAVBAR     -->
+  <section id="header">
+    <a href="#"><img src="images/logo.png" alt="logo" class="logo" /></a>
+    <div>
+      <ul id="navbar">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="shop.html" >Shop</a>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="about.html" class="active">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li id="lg-bag">
+          <a href="shopcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+        <li id="lg-bag">
+          <a id="language-switch"><i class="fa fa-language"></i></a>
+        </li>
+        <li>
+          <a id="dark-mode-btn"><i class="fas fa-moon"></i></a>
+        </li>
+        <li>
+           <a href="#" id="close"><i class="fa fa-times"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div id="mobile-menu">
+      <a href="shopcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <i id="bar" class="fas fa-bars"></i>
+    </div>
+  </section>
+  <!-- ? END SECTION NAVBAR -->
+
+  <!-- ! SECTION PAGE-HEADER    -->
+  <section id="page-header" class="page-header-about">
+    <h3>#Knows Us</h2>
+    <p>If You want know more about Us</p>
+  </section>
+  <!-- ? END SECTION PAGE-HEADER  -->
+
+  <!-- ! SECTION ABOUT-HEADER    -->
+  <section id="about-header" class="section-p1">
+    <img src="images/about/a6.jpg" alt="something is here">
+    <div>
+        <h2>Who We Are?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt doloribus inventore molestiae, fugit in eius praesentium ullam eligendi laborum a, corporis laudantium odit sed explicabo, nostrum provident reiciendis eaque consequatur dolores. Adipisci asperiores reprehenderit, soluta consequatur quis, accusantium quasi repudiandae modi debitis reiciendis dolor voluptates voluptatum optio tempora similique natus?</p>
+
+        <abbr title="">Create stunning images with as much or as little control as you like thanks to a choice of Basic and Creative Mods</abbr>
+        <br><br>
+        <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">Create stunning images with as much or as little control as you like thanks to a choice of Basic and Creative Mods</marquee>
+    </div>
+    
+  </section>
+  <!-- ? END SECTION ABOUT-HEADER   -->
+
+  <!-- ! SECTION ABOUT-APP    -->
+  <section id="about-app" class="section-p1">
+    <h1>Download Our 
+        <a href="#">App</a>
+    </h1>
+    <div class="video">
+        <video autoplay muted loop src="images/about/vid.mp4"></video>
+    </div>
+  </section>
+  <!-- ? END SECTION ABOUT-APP  -->
+
+ <!-- ! SECTION FEATURES     -->
+ <section id="features" class="section-p1">
+    <div class="fe-box">
+      <img src="images/features/f1.png" alt="features-1" />
+      <h4>Free Shipping</h4>
+    </div>
+    <div class="fe-box">
+      <img src="images/features/f2.png" alt="features-2" />
+      <h4>Online Order</h4>
+    </div>
+    <div class="fe-box">
+      <img src="images/features/f3.png" alt="features-3" />
+      <h4>Save Money</h4>
+    </div>
+    <div class="fe-box">
+      <img src="images/features/f4.png" alt="features-4" />
+      <h4>Promotions</h4>
+    </div>
+    <div class="fe-box">
+      <img src="images/features/f5.png" alt="features-5" />
+      <h4>Happy Sell</h4>
+    </div>
+  </section>
+  <!-- ? END SECTION FEATURES     -->
+
+    <!-- ! SECTION SIGNUP BANNER -->
+    <section id="signup-banner" class="section-p1 section-m1">
+        <div>
+          <h3>Sign Up for Newsletters</h3>
+          <p>Get Email Updates about our latest products and <span>Special Offers</span></p>
+        </div>
+        <form>
+          <input type="text" placeholder="Enter your email address" id="email">
+          <button class="btn-primary">Sign Up</button>
+        </form>
+      </section>
+      <!-- ? END SECTION SIGNUP BANNER -->
+
+  <!-- ! FOOTER -->
+  <footer class="section-p1">
+    <img class="footer-logo" src="images/logo-foter.png" alt="logo">
+    <div class="col">
+      <h3>Contact</h3>
+      <p><b>Adress:</b> beni suef,EG </p>
+      <p id="phone-link"><b>Phone:</b> +20 100 3663 790</p>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $('#phone-link').on('click', function(e) {
+            if (!confirm('Are you sure you want to call this number?')) {
+              e.preventDefault();
+            }
+          });
+        </script>
+      <p><b>Open Hours:</b> sat-Fri : 8.00 - 16.00</p>
+      <div class="media-follow">
+        <div class="media-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h3>About</h3>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privact Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+      <h3>My Account</h3>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Where is Order</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="col install">
+      <h3>Install</h3>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="images/pay/app.jpg" alt="logo of app store">
+        <img src="images/pay/play.jpg" alt="logo of play store">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="images/pay/pay.png" alt="logo of paycards">
+    </div>
+    <div class="copyright">
+      <p id="copyright">&copy; Wi-Hi,2023 </p>
+    </div>
+  </footer>
+  <!-- ? END FOOTER -->
+
+
+
+
+  <!-- ! CUSTOM JAVASCRIP -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
